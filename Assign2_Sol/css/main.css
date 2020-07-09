@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Fondamento', cursive;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 2% 0 4%;
+    text-transform: capitalize;
+}
+
+section{
+    margin: 0 auto;
+}
+
+section div{
+    margin: 0 auto;
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+section div:nth-child(2){
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+div header{
+    float: right;
+    font-size: 125%;
+    top: 0;
+    right: 0;
+    width: 40%;
+    text-transform: capitalize;
+    border-bottom-left-radius: 5px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+}
+
+div p{
+    text-align: left;
+    clear: both;
+    padding: 1%;
+}
+
+section div:nth-child(1) header{
+    background-color: #FF5733;
+}
+
+section div:nth-child(2) header{
+    background-color: #C70039;
+}
+
+section div:nth-child(3) header{
+    background-color: #900C3E;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    section div{
+        width: 45%;
+        display: inline-block;
+    }
+
+    section div:first-child{
+        margin-right: 1%;
+    }
+
+    section div:nth-child(2){
+        margin: 0;
+        margin-left: 1%;
+    }
+
+    section div:last-child{
+        display: block;
+        width: 92%;
+        margin-top: 2%;
+    }
+}
+
+@media (min-width: 992px){
+    section div{
+        width: 30%;
+        display: inline-block;
+    }
+
+    section div:nth-child(2){
+        margin: 0 2%;
+    }
+}
+
+
